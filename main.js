@@ -1,1 +1,1 @@
-alert('Ready to start working on the notes app');
+console.log(working);

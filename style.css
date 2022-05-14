@@ -1,5 +1,63 @@
+/* outline: 1px solid red; */
+
 *{
-    padding: 0px;
-    margin: 0px;
-    outline: 1px solid red;
+    padding: 0em;
+    margin: 0em;
+}
+
+span{
+    font-size: 4rem;
+    color: #EAEAEA;
+}
+.main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #3e7dd2;
+}
+
+
+.header{
+    background-color: #E28E1E;
+    color: #3e7dd2;
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-text{
+    margin: 0.2em;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-input{
+    width: 90%;
+    height: 2rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: transparent;
+    border: 2px solid #EAEAEA;
+    color: #EAEAEA;
+}
+
+.body{
+    flex-grow: 1;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.body-button{
+    width: 90%;
+    height: 90%;
+    background-color: transparent;
+    border: none;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23EAEAEAFF' stroke-width='8' stroke-dasharray='21%2c 18' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
 }
