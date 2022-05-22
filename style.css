@@ -5,7 +5,7 @@
     margin: 0em;
 }
 
-span{
+.body-button-span{
     font-size: 4rem;
     color: #EAEAEA;
 }
@@ -27,7 +27,7 @@ span{
 .header-container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
 }
 .header-text{
     margin: 0.2em;
@@ -46,6 +46,10 @@ span{
     background-color: transparent;
     border: 2px solid #EAEAEA;
     color: #EAEAEA;
+}
+
+.search-add-button{
+    display: none;
 }
 
 .body{
@@ -72,6 +76,7 @@ span{
     flex-direction: column;
     align-items: center;
     opacity: 0;
+    display: none;
     transform: translate(0%, 100%);
 }
 
@@ -114,4 +119,42 @@ span{
     border: 2px solid #000;
     width: 45%;
     padding: 0.5em 0 0.5em 0;
+}
+
+@media only screen and (min-width: 782px) {
+    *{
+        outline: 1px solid red;
+    }
+
+    .header-container{
+        justify-content: flex-start;
+        padding: 0em 0em 0em 1em;
+    }
+
+    .body{
+        display: none;
+    }
+
+    .search{
+        flex-grow: 1;
+    }
+
+    .search-input{
+        width: 60%;
+        height: 3rem;
+        margin-right: 1em;
+
+    }
+
+    .search-add-button{
+        background-color: #E28E1E;
+        display:block;
+        border: none;
+        padding: 0.58em 1em 0.58em 1em;
+    }
+
+    .search-add-button-span{
+        color: #EAEAEA;
+        font-size: 2rem;
+    }
 }
