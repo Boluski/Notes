@@ -3,6 +3,7 @@
 *{
     padding: 0em;
     margin: 0em;
+    outline: 1px solid red;
 }
 
 span{
@@ -60,4 +61,54 @@ span{
     background-color: transparent;
     border: none;
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23EAEAEAFF' stroke-width='8' stroke-dasharray='21%2c 18' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+
+.new-note{
+    background-color: #EAEAEA;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.new-note-heading{
+    background-color: #EAEAEA;
+    border: 2px solid #000;
+    width: 80%;
+    height: 2rem;
+    margin: 1em 0em 1em 0em;
+
+}
+
+.new-note-body{
+    background-color: #EAEAEA;
+    border: 2px solid #000;
+    width: 80%;
+    height: 80%;
+    margin: 1em 0em 1em 0em;
+
+}
+
+.new-note-button{
+    width: 80%;
+    margin: 1em 0em 1em 0em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-cancel{
+    border: 2px solid #000;
+    width: 45%;
+    padding: 0.5em 0 0.5em 0;
+}
+
+.button-save{
+    border: 2px solid #000;
+    width: 45%;
+    padding: 0.5em 0 0.5em 0;
 }
