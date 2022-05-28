@@ -67,17 +67,26 @@
 }
 
 
-.new-note{
-    background-color: #EAEAEA;
+.new-note-container{
+    background-color: transparent;
     position: absolute;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     opacity: 0;
     display: none;
     transform: translate(0%, 100%);
+}
+
+.new-note{
+    width: 100%;
+    height: 100%;
+    background-color: #EAEAEA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .new-note-heading{
@@ -87,8 +96,6 @@
     border: 2px solid #000;
     width: 80%;
     height: 2rem;
-    margin: 1em 0em 1em 0em;
-
 }
 
 .new-note-body{
@@ -97,14 +104,12 @@
     font-family: sans-serif;
     border: 2px solid #000;
     width: 80%;
-    height: 80%;
-    margin: 1em 0em 1em 0em;
-
+    height: 70%;
+    margin: 0em 0em 0em 0em;
 }
 
 .new-note-button{
     width: 80%;
-    margin: 1em 0em 1em 0em;
     display: flex;
     justify-content: space-between;
 }
@@ -156,5 +161,39 @@
     .search-add-button-span{
         color: #EAEAEA;
         font-size: 2rem;
+    }
+
+    .new-note-container{
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .new-note{
+        width: 70%;
+        height: 85%;
+        background-color: #EAEAEA;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .new-note-button{
+        height: 11%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .button-cancel{
+        border: 2px solid #000;
+        width: 100%;
+        padding: 0.5em 0 0.5em 0;
+    }
+    
+    .button-save{
+        border: 2px solid #000;
+        width: 100%;
+        padding: 0.5em 0 0.5em 0;
     }
 }
